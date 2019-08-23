@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<body>
+
+    <h2>splice()</h2>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        documemt.getElememtById = ("demo1").innerHTML = "Orignal Array:<br>" + fruits;
+
+        function myFunction()
+        {
+            var removed = fruits.splice(2, 2, "Lemon", "Kiwi");
+            document.getElementById("demo2").innerHTML = "New Array:<br>" + fruits;
+            document.getElementById("demo3").innerHTML = "Removed items:<br>" + removed;
+        }
+    </script>
+
+</body>
+</html>
