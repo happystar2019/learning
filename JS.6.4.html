@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<body>
+
+<input type="number" id="myNumber" value="">
+<button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction()
+    {
+        var x = document.getElementById("myNumber").value;
+        document.getElementById("demo").innerHTML = calc(x);
+    }
+    function calc(a)
+    {
+        a = parseInt(a)
+        console.log(typeof (a))
+        console.log(a)
+        console.log(a + 1)
+        console.log(a*(a + 1))
+        var z = (a*(a + 1)) / 2;
+
+        return z;
+    }
+</script>
+
+</body>
+</html>
