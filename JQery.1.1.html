@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<style>
+    div{
+        width: 100px;
+        height: 50px;
+        padding: 15px;
+        margin: 15px;
+        background-color: red;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $(".hidebtn").click(function () {
+            $("div").hide(1000, "linear", function () {
+                alert("Hide()");
+            });
+        });
+    });
+</script>
+</head>
+<body>
+
+    <div>Hide</div>
+    <button class="hidebtn">Hide</button>
+
+</body>
+</html>
