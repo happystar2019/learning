@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("#test1").text("Hello world!");
+        });
+        $("#btn2").click(function () {
+            $("#test2").html("<b>Hello world!</b>");
+        });
+        $("#btn3").click(function () {
+            $("#test3").val("TEST");
+        });
+    });
+</script>
+</head>
+
+<body>
+    <p id="test1">P1</p>
+    <p id="test2">P2</p>
+    <p>Input: <input type="text" id="test3" value="tutor"></p>
+    <button id="btn1">text</button>
+    <button id="btn2">HTML</button>
+    <button id="btn3">Value</button>
+</body>
+</html>
